@@ -94,12 +94,7 @@ class RegisterActivity : AppCompatActivity() {
                     Toast.makeText(this@RegisterActivity, "User already exists!", Toast.LENGTH_LONG)
                         .show()
                 }
-
-
-
-
             }
-
 
             override fun onFailure(call: Call<ResponseBody?>, t: Throwable) {
                 Toast.makeText(this@RegisterActivity, t.message, Toast.LENGTH_LONG).show()
