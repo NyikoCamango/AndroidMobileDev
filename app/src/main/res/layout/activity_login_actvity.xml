@@ -4,8 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActvity"
-    android:padding="20dp">
+    android:background="@color/colorWhite"
+    android:padding="20dp"
+
+    tools:context=".LoginActvity">
 
 
     <TextView
@@ -16,7 +18,7 @@
         android:fontFamily="cursive"
         android:padding="10dp"
         android:text="SpringDroid"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@color/black"
         android:textSize="60sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/btnLogin"
@@ -78,7 +80,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Not a user?\nClick here to Register"
-        android:textColor="@color/colorPrimary"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toTopOf="@+id/btnLogin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

@@ -4,16 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LandingPage">
+    android:background="@color/colorBlue"
+    tools:context=".SplashScreenActivity">
 
-
-    <ImageView
-        android:id="@+id/imageView4"
+    <TextView
+        android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="290dp"
+        android:fontFamily="cursive"
+        android:padding="10dp"
+        android:text="SpringDroid"
+        android:textColor="@color/black"
+        android:textSize="60sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.442"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/img_2" />
+        app:layout_constraintVertical_bias="0.026" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
