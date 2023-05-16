@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBlue"
     tools:context=".SplashScreenActivity">
+
 
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="290dp"
-        android:fontFamily="cursive"
+        android:fontFamily="casual"
         android:padding="10dp"
-        android:text="SpringDroid"
+        android:text="Varisty App"
         android:textColor="@color/black"
         android:textSize="60sp"
         android:textStyle="bold"
@@ -23,5 +23,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.026" />
+
+    <ImageView
+        android:id="@+id/imageVie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="156dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:fromYDelta="0"
+        android:toYDelta="50"
+        android:duration="500"
+        android:interpolator="@android:anim/bounce_interpolator"
+        android:repeatCount="infinite"
+        android:repeatMode="reverse"
+        app:srcCompat="@drawable/img_13" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
