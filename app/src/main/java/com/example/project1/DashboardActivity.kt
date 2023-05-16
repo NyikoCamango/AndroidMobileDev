@@ -4,10 +4,12 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 
 class DashboardActivity : AppCompatActivity() {
     lateinit var BtnLogout: Button
+    lateinit var Btnhelp:Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,11 +23,21 @@ class DashboardActivity : AppCompatActivity() {
         tvWelcome.setText(welcomeText);
 
 
-         BtnLogout=findViewById(R.id.btn_logout)
+        BtnLogout=findViewById(R.id.btn_logout)
         BtnLogout.setOnClickListener {
             val intent = Intent(this, LoginActvity::class.java)
             startActivity(intent)
         }
+
+        val imageView: ImageView = findViewById(R.id.image_view)
+
+        imageView.setOnClickListener {
+            val intent = Intent(this, HelpActivity::class.java)
+            startActivity(intent)
+
+        }
+
+
 
 
 
