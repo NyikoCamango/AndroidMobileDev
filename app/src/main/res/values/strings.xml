@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Project1</string>
+    <string name="link">Hyperlink TextView</string>
+    <string name="uj"><a href="https://www.uj.ac.za/">University Of Johannesburg</a></string>
+    <string name="unizulu"><a href="http://www.unizulu.ac.za/">University Of Zululand</a></string>
+    <string name="wits"><a href="https://www.wits.ac.za/">University of the Witwatersrand</a></string>
+    <string name="tut"><a href="https://www.tut.ac.za/">TSHWANE UNIVERSITY OF TECHNOLOGY</a></string>
+    <string name="sbu"><a href="http://www.sun.ac.za/">University Of Stellenbosh</a></string>
+    <string name="uwc"><a href="https://www.uwc.ac.za/">University Of Western Cape</a></string>
+    <string name="nwu"><a href="https://www.nwu.ac.za/">North West University</a></string>
+    <string name="ul"><a href="https://www.ul.ac.za/">University Of Limpopo</a></string>
+    <string name="uct"><a href="https://www.uj.ac.za/">University Of Cape Town</a></string>
+    <string name="up"><a href="http://www.unizulu.ac.za/">University Of Pretoria </a></string>
+    <string name="ukzn"><a href="http://www.unizulu.ac.za/">University of KwaZulu-Natal</a></string>
+    <string name="ru"><a href="https://www.tut.ac.za/">Rhodes University</a></string>
+    <string name="unisa"><a href="http://www.sun.ac.za/">University Of South Africa</a></string>
+    <string name="ufs"><a href="https://www.uwc.ac.za/">University Of FreeState</a></string>
+    <string name="nmmu"><a href="https://www.nwu.ac.za/">Nelson Mandela Metropolitan University</a></string>
+    <string name="cput"><a href="https://www.ul.ac.za/">Cape Peninsula University of Technology</a></string>
 </resources>

@@ -4,11 +4,16 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 
 class DashboardActivity : AppCompatActivity() {
+
+    private lateinit var BtnLogout: Button
+    private lateinit var institution: ImageView
     lateinit var BtnLogout: Button
     lateinit var toDoButton: Button
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,13 +31,17 @@ class DashboardActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        institution=findViewById(R.id.image_view1)
+        institution.setOnClickListener {
+            val intent = Intent(this, InsitutionsActivity2::class.java)
+            startActivity(intent)
+        }
 
-         BtnLogout=findViewById(R.id.btn_logout)
+        BtnLogout=findViewById(R.id.btn_logout)
         BtnLogout.setOnClickListener {
             val intent = Intent(this, LoginActvity::class.java)
             startActivity(intent)
         }
-
 
 
 
