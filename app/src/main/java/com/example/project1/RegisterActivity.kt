@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button
 import android.widget.EditText;
+import android.widget.TextView
 import android.widget.Toast;
 
 import java.io.IOException;
@@ -51,6 +52,10 @@ class RegisterActivity : AppCompatActivity() {
         }
 
 
+        this.findViewById<TextView>(R.id.tvLoginLink).setOnClickListener{
+            startActivity(Intent(this, LoginActvity::class.java))
+        }
+
 
     }
 
@@ -89,12 +94,7 @@ class RegisterActivity : AppCompatActivity() {
                     Toast.makeText(this@RegisterActivity, "User already exists!", Toast.LENGTH_LONG)
                         .show()
                 }
-
-
-
-
             }
-
 
             override fun onFailure(call: Call<ResponseBody?>, t: Throwable) {
                 Toast.makeText(this@RegisterActivity, t.message, Toast.LENGTH_LONG).show()
