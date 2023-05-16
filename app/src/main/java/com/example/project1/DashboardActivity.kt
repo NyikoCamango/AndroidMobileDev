@@ -8,8 +8,12 @@ import android.widget.ImageView
 import android.widget.TextView
 
 class DashboardActivity : AppCompatActivity() {
+
     private lateinit var BtnLogout: Button
     private lateinit var institution: ImageView
+    lateinit var BtnLogout: Button
+    lateinit var toDoButton: Button
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,6 +25,11 @@ class DashboardActivity : AppCompatActivity() {
         welcomeText ="Welcome "+ getIntent().getStringExtra("Username").toString() + "!";
         tvWelcome = this.findViewById(R.id.tvWelcome);
         tvWelcome.setText(welcomeText);
+        toDoButton=findViewById(R.id.todoB)
+        toDoButton.setOnClickListener{
+            val intent = Intent(this,DashboardActivity::class.java)
+            startActivity(intent)
+        }
 
         institution=findViewById(R.id.image_view1)
         institution.setOnClickListener {
