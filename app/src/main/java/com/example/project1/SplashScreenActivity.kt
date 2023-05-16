@@ -1,6 +1,7 @@
 package com.example.project1
 
 import android.content.Intent
+import android.graphics.drawable.AnimationDrawable
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
@@ -20,7 +21,6 @@ class SplashScreenActivity : AppCompatActivity() {
         )
 
 
-
         // we used the postDelayed(Runnable, time) method
         // to send a message with a delayed time.
         //Normal Handler is deprecated , so we have to change the code little bit
@@ -31,5 +31,7 @@ class SplashScreenActivity : AppCompatActivity() {
             startActivity(intent)
             finish()
         }, 3000) // 3000 is the delayed time in milliseconds.
+
+
     }
 }

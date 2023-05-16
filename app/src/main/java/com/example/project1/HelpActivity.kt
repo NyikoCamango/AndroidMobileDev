@@ -7,13 +7,11 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 
-class DashboardActivity : AppCompatActivity() {
-    lateinit var BtnLogout: Button
-    lateinit var Btnhelp:Button
+class HelpActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_dashboard)
+        setContentView(R.layout.activity_help)
 
         lateinit var welcomeText: String
         lateinit var tvWelcome: TextView
@@ -23,26 +21,17 @@ class DashboardActivity : AppCompatActivity() {
         tvWelcome.setText(welcomeText);
 
 
-        BtnLogout=findViewById(R.id.btn_logout)
-        BtnLogout.setOnClickListener {
-            val intent = Intent(this, LoginActvity::class.java)
-            startActivity(intent)
-        }
+        val etButtonHelp: Button = findViewById(R.id.btnHelp)
 
-        val imageView: ImageView = findViewById(R.id.image_view)
-
-        imageView.setOnClickListener {
-            val intent = Intent(this, HelpActivity::class.java)
+        etButtonHelp.setOnClickListener {
+            val intent = Intent(this, DashboardActivity::class.java)
             startActivity(intent)
 
+
         }
-
-
-
-
-
-
-
-
     }
+
+
+
+
 }
