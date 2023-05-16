@@ -19,6 +19,7 @@
         <activity
             android:name=".InsitutionsActivity2"
             android:exported="false" />
+
         <activity
             android:name=".SplashScreenActivity"
             android:exported="true">
