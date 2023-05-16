@@ -8,6 +8,7 @@ import android.widget.TextView
 
 class DashboardActivity : AppCompatActivity() {
     lateinit var BtnLogout: Button
+    lateinit var BtnTodo: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,6 +25,11 @@ class DashboardActivity : AppCompatActivity() {
          BtnLogout=findViewById(R.id.btn_logout)
         BtnLogout.setOnClickListener {
             val intent = Intent(this, LoginActvity::class.java)
+            startActivity(intent)
+        }
+        BtnTodo=findViewById(R.id.todoB)
+        BtnTodo.setOnClickListener {
+            val intent = Intent(this, ToDoList::class.java)
             startActivity(intent)
         }
 
