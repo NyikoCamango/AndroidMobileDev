@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" >
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -14,15 +14,29 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Project1"
         android:usesCleartextTraffic="true"
-        tools:targetApi="31" >
+        tools:targetApi="31">
         <activity
-            android:name=".HelpActivity"/>
+            android:name=".CourseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Institution"
+            android:exported="false" />
+        <activity
+            android:name=".BursaryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TodoActivity"
+            android:exported="false" />
+        <activity android:name=".HelpActivity" />
         <activity
             android:name=".CoursesActivity"
             android:exported="false" />
         <activity
             android:name=".SplashScreenActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

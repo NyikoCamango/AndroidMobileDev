@@ -80,7 +80,6 @@
         android:background="@android:color/holo_orange_dark"
         android:text="REGISTER"
 
-        android:textColor="@android:color/background_dark"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

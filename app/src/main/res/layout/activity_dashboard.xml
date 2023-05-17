@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorWhite"
+ android:background="@color/colorWhite"
     tools:context=".DashboardActivity"
     android:padding="20dp">
 
@@ -79,22 +79,19 @@
                 android:id="@+id/todoB"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="44dp"
+                android:layout_marginStart="30dp"
                 android:layout_marginBottom="24dp"
-                android:gravity="center_horizontal"
                 android:text="TODO LIST"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
 
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/editProfileB"
-                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
-                android:layout_marginBottom="4dp"
                 android:text="EDIT PROFILE"
-                android:textColor="@color/black"
+
                 app:layout_constraintBottom_toBottomOf="@+id/todoB"
                 app:layout_constraintStart_toEndOf="@+id/todoB" />
 
@@ -106,7 +103,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="30dp"
         android:gravity="center_horizontal"
         android:orientation="horizontal"
         android:weightSum="2"
@@ -124,7 +121,7 @@
             android:elevation="12dp"
             android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
-            app:cardCornerRadius="8dp">
+            app:cardCornerRadius="10dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -301,7 +298,7 @@
                 android:layout_height="match_parent">
 
                 <ImageView
-                    android:id="@+id/image_view"
+                    android:id="@+id/image_vi"
                     android:layout_width="109dp"
                     android:layout_height="88dp"
                     android:src="@drawable/img_8"
@@ -325,7 +322,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_bias="0.5"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/image_view" />
+                    app:layout_constraintTop_toBottomOf="@+id/image_vi" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -343,7 +340,7 @@
         android:layout_height="wrap_content"
         android:background="@color/coloGreen"
         android:text="LOGOUT"
-        android:textColor="@android:color/background_dark"
+
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">Project1</string>
+    <string name="Hyperlink"><a href="https://bursaries-southafrica.co.za/absa-bursaries/">Absa_Bursary</a></string>
+    <string name="Hyperlink2"><a href="https://bbdsoftware.com/jobs/bursary-beyond-programme/">BBD-Software</a></string>
+    <string name="Hyperlink3"><a href="https://www.sasolbursaries.com/welcome/?gclid=CjwKCAjw04yjBhApEiwAJcvNofa3joB3p6Ah8vHCJKVi-7Jj-83wQEfL2I1sp7MGDeN0oYO-Iij9ExoCLiAQAvD_BwEgclsrc=aw.ds">SASOL</a></string>
+    <string name="Hyperlink4"><a href="https://www.ul.ac.za/application/downloads/angloplatimu.pdf">Anglo Platinum</a></string>
+    <string name="Hyperlink5"><a href="https://www.oldmutual.co.za/careers/accounting-bursary/">Old Mutual</a></string>
+    <string name="Hyperlink6"><a href="https://bursaries-southafrica.co.za/funza-lushaka-bursary/">Funza-lushaka-bursary</a></string>
+
+
+    <string name="link">Hyperlink TextView</string>
+    <string name="uj"><a href="https://www.uj.ac.za/">University Of Johannesburg</a></string>
+    <string name="unizulu"><a href="http://www.unizulu.ac.za/">University Of Zululand</a></string>
+    <string name="wits"><a href="https://www.wits.ac.za/">University of the Witwatersrand</a></string>
+    <string name="tut"><a href="https://www.tut.ac.za/">Tshwane Univrtsity of Technology</a></string>
+    <string name="sbu"><a href="http://www.sun.ac.za/">University Of Stellenbosh</a></string>
+    <string name="uwc"><a href="https://www.uwc.ac.za/">University Of Western Cape</a></string>
+    <string name="nwu"><a href="https://www.nwu.ac.za/">North West University</a></string>
+    <string name="ul"><a href="https://www.ul.ac.za/">University Of Limpopo</a></string>
+    <string name="uct"><a href="https://www.uct.ac.za/">University Of Cape Town</a></string>
+    <string name="up"><a href="https://www.up.ac.za/">University Of Pretoria </a></string>
+    <string name="ukzn"><a href="https://www.ukzn.ac.za/">University of KwaZulu-Natal</a></string>
+    <string name="ru"><a href="https://www.ru.ac.za/">Rhodes University</a></string>
+    <string name="unisa"><a href="https://www.unisa.ac.za/sites/corporate/default/">University Of South Africa</a></string>
+    <string name="ufs"><a href="https://www.ufs.ac.za/">University Of FreeState</a></string>
+    <string name="nmmu"><a href="https://www.mandela.ac.za/">Nelson Mandela Metropolitan University</a></string>
+    <string name="cput"><a href="https://www.cput.ac.za/">Cape Peninsula University of Technology</a></string>
 </resources>

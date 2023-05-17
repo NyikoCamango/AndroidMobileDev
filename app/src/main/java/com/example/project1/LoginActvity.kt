@@ -1,12 +1,12 @@
 package com.example.project1
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.Callback
@@ -14,6 +14,7 @@ import retrofit2.Response
 import java.io.IOException
 
 class LoginActvity : AppCompatActivity() {
+    lateinit var  sessionManager: SessionManager
 
     lateinit var etUsername: EditText
     lateinit var etPassword: EditText
@@ -66,7 +67,7 @@ class LoginActvity : AppCompatActivity() {
                 }
                 if ( s==userName) {
                     val intent = Intent(this@LoginActvity,DashboardActivity::class.java)
-                    intent.putExtra("Username",s)
+                    intent.putExtra("Username",s )
                    // Toast.makeText(this@LoginActvity, "Successfully login", Toast.LENGTH_LONG).show()
                     startActivity(intent)
                 } else {
