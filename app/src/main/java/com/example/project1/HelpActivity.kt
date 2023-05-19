@@ -14,6 +14,12 @@ class HelpActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_help)
 
+        lateinit var welcomeText: String
+        lateinit var tvWelcome: TextView
+
+        welcomeText ="Welcome "+ getIntent().getStringExtra("Username").toString() + "!";
+        tvWelcome = this.findViewById(R.id.tvWelcome);
+        tvWelcome.setText(welcomeText);
 
 
         val etButtonHelp: Button = findViewById(R.id.btnHelp)

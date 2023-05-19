@@ -13,6 +13,7 @@ class DashboardActivity : AppCompatActivity() {
     lateinit var BtnLogout: Button
     lateinit var Btnedit:Button
     lateinit var  todoB:Button
+    lateinit var toDoButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,6 +26,11 @@ class DashboardActivity : AppCompatActivity() {
         welcomeText ="Welcome "+ getIntent().getStringExtra("Username").toString() + "!";
         tvWelcome = this.findViewById(R.id.tvWelcome);
         tvWelcome.setText(welcomeText);
+        toDoButton=findViewById(R.id.todoB)
+        toDoButton.setOnClickListener{
+            val intent = Intent(this,DashboardActivity::class.java)
+            startActivity(intent)
+        }
 
 
         BtnLogout=findViewById(R.id.btn_logout)
